@@ -68,7 +68,7 @@ class MixConv2d(nn.Module):
         """
         return self.act(self.bn(torch.cat([m(x) for m in self.m], 1)))
 
-
+# NOTE: interesting
 class Ensemble(nn.ModuleList):
     """Ensemble of models."""
 
